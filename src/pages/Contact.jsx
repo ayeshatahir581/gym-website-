@@ -1,12 +1,32 @@
+import ContactHero from '../components/contact/ContactHero'
+import ContactInfo from '../components/contact/ContactInfo'
+import ContactForm from '../components/contact/ContactForm'
+import BusinessHours from '../components/contact/BusinessHours'
+import LocationMap from '../components/contact/LocationMap'
+import FAQSection from '../components/contact/FAQSection'
+import SocialLinks from '../components/contact/SocialLinks'
+import ContactCTA from '../components/contact/ContactCTA'
+
 function Contact() {
   return (
-    <section className="mx-auto flex min-h-[60vh] max-w-5xl items-center px-4 py-20 sm:px-6 lg:px-8">
-      <div className="w-full rounded-[28px] border border-white/10 bg-[#111111] p-8 text-center shadow-2xl shadow-black/30">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#F97316]">Contact</p>
-        <h1 className="mt-4 text-4xl font-black text-white sm:text-5xl">Contact IronPulse</h1>
-        <p className="mx-auto mt-4 max-w-2xl text-base text-[#A3A3A3]">This page will be developed next.</p>
-      </div>
-    </section>
+    <main className="bg-[#0A0A0A] text-white">
+      <ContactHero />
+      <ContactInfo />
+
+      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
+          <ContactForm />
+          <div className="flex flex-col gap-6">
+            <BusinessHours />
+            <LocationMap />
+          </div>
+        </div>
+      </section>
+
+      <FAQSection />
+      <SocialLinks />
+      <ContactCTA />
+    </main>
   )
 }
 

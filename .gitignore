@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Testing artifacts
+coverage
+playwright-report
+test-results
+_pw_shots
+_pw_*.cjs
+_pw_*.js
+
 # Env files
 .env
 .env.*

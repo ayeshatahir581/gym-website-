@@ -94,7 +94,7 @@ function TrainerModal({ trainer, onClose }) {
 
           <div className="mt-5 flex items-center gap-2">
             {Object.entries(trainer.socials).map(([key, value]) => {
-              const Icon = socialIconMap[key] || Instagram
+              const Icon = socialIconMap[key] || Globe
               return (
                 <a
                   key={key}
